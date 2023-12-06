@@ -1,0 +1,38 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.card-img-top{
+    width: 100%;
+    height: 250px;
+}
+.card{
+    z-index: 1;
+    overflow: hidden;
+    transition:0.7s;
+}
+.theme-text{
+    color: #8B9174;
+}
+.card:hover{
+    color: white;
+}
+.card::after{
+   content: "";
+    position: absolute;
+    top: 0%;
+    left: -100%;
+    background: #464b52;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    transition: 0.5s;
+}
+.card:hover::after{
+
+    left: 0%;
+
+}
